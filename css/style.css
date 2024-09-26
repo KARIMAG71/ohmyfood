@@ -1,5 +1,79 @@
-.class {
-  color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.header {
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
+.header_logo {
+  font-family: "shrikhand", "cursive";
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: relative;
+}
+
+.search-restaurant {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.search-restaurant_title {
+  font-size: 30px;
+  margin: 0;
+}
+.search-restaurant_button {
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(221, 121, 218, 0.9) 100%);
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  margin-top: 30px;
+  transition-duration: 0.25s;
+  border-radius: 100px;
+}
+.search-restaurant_button:hover {
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-fonctionnement {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.button-fonctionnement {
+  background-image: grey;
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  margin-top: 30px;
+  transition-duration: 0.25s;
+  border-radius: 50px;
+}
+
+.text-fonctionnement {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background-color: #eaeaea;
 }
 
 /*# sourceMappingURL=style.css.map */
