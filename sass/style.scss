@@ -60,25 +60,54 @@ body{
       }
     }
 }
-.search-fonctionnement {
+
+.fonctionnement {
+padding: 0 30px;
+
+
+&_button {
+    position: relative;
+    background-color: #f6f6f6;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    margin-top: 30px;
+    transition-duration: 0.25s;
+    border-radius: 25px;
+  }
+  &_text {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: #eaeaea;
+    font-weight: bold;
+  }
+  &_icon {
+    &:hover {
+      color: #9356dc;
+    }
+  }
+  &_number {
+    position: absolute;
+    left: -14px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 14px;
+    width: 14px;
+    padding: 10px;
+    background-color: #9356dc;
+  }
+}
+  .search-fonctionnement {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     padding: 30px;
-}
-.button-fonctionnement {
-    background-image : grey;
-    text-decoration: none;
-    padding: 20px;
-    color:black;
-    margin-top : 30px;
-    transition-duration: 0.25s; 
-    border-radius : 50px;
-}
-.text-fonctionnement {
-    display: flex;
-    justify-content: center;
-    gap: 10px ;
-    align-items: center;
-    background-color: #eaeaea;  
-}
+  }
+
+
