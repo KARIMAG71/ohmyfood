@@ -97,4 +97,46 @@ body {
   padding: 30px;
 }
 
+.Restaurant {
+  background-color: #eaeaea;
+}
+.Restaurant_cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  margin: 20px 20px 20px 20px;
+  position: relative;
+}
+.Restaurant_cards_icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+.Restaurant_cards_icon:hover {
+  color: #9356dc;
+}
+.Restaurant_cards_icon:hover_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(54, 52, 52);
+  color: #eaeaea;
+  gap: 15px;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.footer:hover {
+  color: rgb(192, 66, 146);
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */

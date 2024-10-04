@@ -6,6 +6,7 @@ body{
 }
 
 
+
 .header {
     display: flex;
     height: 75px;
@@ -61,6 +62,7 @@ body{
     }
 }
 
+
 .fonctionnement {
 padding: 0 30px;
 
@@ -110,4 +112,52 @@ padding: 0 30px;
     padding: 30px;
   }
 
+.Restaurant {
+
+background-color: #eaeaea;
+
+ &_cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    position: relative;
+
+ 
+    &_icon {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+        &:hover {
+          color: #9356dc; 
+        
+    
+    &_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eaeaea;
+    }
+}
+}
+}
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(54, 52, 52);
+    color: #eaeaea;
+    gap: 15px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    &:hover {
+        color: rgb(192, 66, 146);
+        text-decoration: underline;
+      }
+    }
 
