@@ -99,29 +99,54 @@ body {
 
 .Restaurant {
   background-color: #eaeaea;
-}
-.Restaurant_cards {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-radius: 20px 20px 0 0;
   padding: 20px;
-  margin: 20px 20px 20px 20px;
+  margin-top: 100px;
   position: relative;
 }
-.Restaurant_cards_icon {
+.Restaurant_container {
+  gap: 15px;
   display: flex;
-  justify-content: flex-end;
-  margin-right: 50px;
+  flex-direction: column;
 }
-.Restaurant_cards_icon:hover {
-  color: #9356dc;
+.Restaurant_cards {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
 }
-.Restaurant_cards_icon:hover_text {
+.Restaurant_cards a {
+  text-decoration: none;
+  color: black;
+}
+.Restaurant_cards img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+.Restaurant_footer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: #eaeaea;
+  padding: 15px;
+}
+.Restaurant_footer_text {
+  flex: 1;
+}
+.Restaurant_footer_text h4 {
+  margin: 0 0 15px 0;
+}
+.Restaurant_footer_text p {
+  margin: 0;
+}
+.Restaurant_badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #1b6150;
+  background-color: #99E2D0;
+  padding: 5PX;
 }
 
 .footer {
