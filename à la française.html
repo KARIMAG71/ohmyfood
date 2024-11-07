@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="sass/style.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -29,88 +29,100 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header header-withBackarrow">
+      <a href="./index.html"><i class="fas fa-arrow-left header_arrow"></i></a>
       <h1 class="header_logo">Ohmyfood</h1>
     </header>
     <main>
-        <section class="restaurant">
-            <div class="restaurant_cards">
-        <a href="">
-            <img src=images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg width="100" height="50"> 
-        </div>
-        </section>
-        <section class="title">
-            <div class="title_cards2_text">
-                <h2>A La Française</h2>
-                <div>
-                <i class="far fa-heart"></i>
-                <div class="menu">
-                    <h3>Entrée</h3>
-                    <div class="menu_button menu_text">
-                        <li class="menu_number">25</li>
-                        <i class="menu_icon fa-sharp fa-solid fa-euro-sign"></i>
-                        <p>Tartare de poulpe assidulé</p>
-                        <li>Aux zestes d'orange</li>
-                    </div>
-                    <div class="menu_button menu_text">
-                        <li class="menu_number">35</li>
-                        <i class="menu_icon fa-sharp fa-solid fa-euro-sign"></i>
-                        <p>Velouté de légumes d'antan</p>
-                        <li>Aux zestes d'orange</li>
-                    </div>
-                    <div class="menu_button menu_text">
-                        <p class="menu_number">20</p>
-                        <i class="menu_icon fa-sharp fa-solid fa-euro-sign"></i>
-                        <p>Soupe à l'oignon</p>
-                        <li>Revisité></li>
-                        </div>
-                        
-                        <div class="menu">
-                            <h3>Plats</h3>
-                            <div class="menu_button menu_text">
-                                <li class="menu_number">40</li>
-                                <i class="menu_icon fa-sharp fa-solid fa-euro-sign"></i>
-                                <p>Coquilles saint jacques</p>
-                                <li>Accompagnées d'une purée de panais</li>
-                            </div>
-                            <div class="menu_button menu_text">
-                                <li class="menu_number">35</li>
-                                <i class="menu_icon fa-sharp fa-solid fa-euro-sign"></i>
-                                <p>Magrtet de Canard</p>
-                                <li>Et purée de pomme de terre</li>
-                            </div>
-                            <div class="menu_button menu_text">
-                                <p class="menu_number">44</p>
-                                <i class="menu_icon fa-sharp fa-solid fa-euro-sign"></i>
-                                <p>Pigeonneau d'Ille_et-Villaine/p>
-                                <li>Sur son lit de Gnoccghis aux légumes></li>
-                                </div>
-                        
-                        <div class="menu">
-                            <h3>Desserts</h3>
-                            <div class="menu_button menu_text">
-                                <li class="menu_number">25</li>
-                                <i class="menu_icon fa-sharp fa-solid fa-euro-sign"></i>
-                                <p>Pétales de violettes glacés</p>
-                                <li>Et purée de noisette</li>
-                            </div>
-                            <div class="menu_button menu_text">
-                                <li class="menu_number">35</li>
-                                <i class="menu_icon fa-sharp fa-solid fa-euro-sign"></i>
-                                <p>Fondant au chocolat</p>
-                                <li>Revisité</li>
-                            </div>
-                            <div class="menu_button menu_text">
-                                <p class="menu_number">20</p>
-                                <i class="menu_icon fa-sharp fa-solid fa-euro-sign"></i>
-                                <p>Mille feuille croustillant</p>
-                                <li>Myrtilles et pâtes d'amandes></li>
-                                </div> 
+        <section>
+            <img class="banner"src=images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpgwidth.jpg alt="">
 
+        </section>
+        <section class="menu">
+            <div class="menu_title_cards2">
+                <h2 class="menu_title_cards2_text">A La Française</h2>
+                <i class="far fa-heart"></i>
+                </div>
+                <div> 
+                <div>
+                    <h3 class="menu_title">Entrée</h3>
+                    <div class="menu_button menu_text">
+                        <div class="menu_text_header">      
+                      <h4>Tartare de poulpe assidulé</h4>
+                        <p>Aux zestes d'orange</p>
+                    </div>
+                    <p class="menu_text_price">25 </p>
+                    </div>
+                    <div class="menu_button menu_text">
+                        <div class="menu_text_header">
+                        <h4>Velouté de légumes d'antan</h4>
+                        <p>Aux zestes d'orange</p>
+                    </div>
+                    <p class="menu_text_price">35 </p>
+                    </div>
+                    <div class="menu_button menu_text">
+                        <div class="menu_text_header">
+                        <h4>Soupe à l'oignon</h4>
+                        <p>Revisité></p>
+                        </div>
+                        <p class="menu_text_price">20 </p>
+                        </div>
+       <div>
+        <div>
+                        <h3 class="menu_title">Plats</h3> 
+                        <div class="menu_button menu_text">
+                            <div class="menu_text_header"> 
+                                <h4>Coquilles saint jacques</h4>
+                                <p>Accompagnées d'une purée de panais</p>
+                            </div>
+                            <p class="menu_text_price">40 </p>
+                        </div>
+
+                            <div class="menu_button menu_text">
+                                <div class="menu_text_header">   
+                                <h4>Magrtet de Canard</h4>
+                                <p>Et purée de pomme de terre</p>
+                            </div>
+                                <p class="menu_text_price">35 </p>
+                            </div>
+
+                            <div class="menu_button menu_text">
+                                <div class="menu_text_header">  
+                                <h4>Pigeonneau d'Ille_et-Villaine/h4>
+                                <p>Sur son lit de Gnoccghis aux légumes></p>
+                                </div>
+                                <p class="menu_text_price">44 </p>
+                                </div>
+                                <div>
+                                    <div>
+
+                            <h3 class="menu_title">Desserts</h3>
+                            <div class="menu_button menu_text">
+                                <div class="menu_text_header">  
+                                <h4>Pétales de violettes glacés</h4>
+                                <p>Et purée de noisette</p>
+                            </div>
+                            <p class="menu_text_price">25 </p>
+                            </div>
+                            <div class="menu_button menu_text">
+                                <div class="menu_text_header">  
+                                <h4>Fondant au chocolat</h4>
+                                <p>Revisité</p>
+                            </div>
+                            <p class="menu_text_price">35 </p>
+                            </div>
+
+                            <div class="menu_button menu_text">
+                                 <div class="menu_text_header">
+                                <h4>Mille feuille croustillant</h4>
+                                <p>Myrtilles et pâtes d'amandes></p>
+                                </div> 
+                                <p class="menu_text_price">20 </p>
+                            </div>
          <section class="search-commande">
         <a href="#commande" class="search-commande_button">Commander</a>
     </section>
-    
+
             </div>
         </section>
     </main>
