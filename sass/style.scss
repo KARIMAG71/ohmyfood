@@ -1,81 +1,77 @@
-@use "restaurant.scss";
+@use "restaurant";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 
-body{
-    margin:0;
-    font-family: "Roboto";
+
+body {
+  margin: 0;
+  font-family: "Roboto";
 }
-
-
 
 .header {
-    display: flex;
-    height: 75px;
-    justify-content: center ;
-    align-items: center;
-  
-    &_logo {
-        font-family:"shrikhand", "cursive";
-    
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+
+  &_logo {
+    font-family: "shrikhand", "cursive";
+
   }
 }
-  
-  .localisation {
-    display: flex;
-    justify-content: center;
-    gap: 10px ;
-    align-items: center;
-    background-color: #eaeaea;
-    box-shadow: 0 0 15px rgba(0,0,0,0.50);  
-    z-index: 2;
-    position: relative;
-  }
-  
-  .search-restaurant {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    text-align: center;
-    background-color: #f6f6f6;
-  
-    &_title {
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.50);
+  z-index: 2;
+  position: relative;
+}
+
+.search-restaurant {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  background-color: #f6f6f6;
+
+  &_title {
     font-size: 30px;
     margin: 0;
+  }
+
+  &_button {
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(221, 121, 218, 0.9) 100%);
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    margin-top: 30px;
+    transition-duration: 0.25s;
+    border-radius: 100px;
+
+
+    &:hover {
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
     }
-  
-     &_button {
-      background-image:linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(221, 121, 218, 0.9) 100%);
-      text-decoration: none;
-      padding: 20px;
-      color:white;
-      margin-top : 30px;
-      transition-duration: 0.25s; 
-      border-radius : 100px;
-    
-  
-     
-  
-      &:hover {
-        box-shadow:0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-      }
-    }
+  }
 }
 
 
 .fonctionnement {
-padding: 0 30px;
+  padding: 0 30px;
 
-   @media (min-width: 768px) {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   gap: 30px;
-    
- }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
 
-&_button {
+  &_button {
     position: relative;
     background-color: #f6f6f6;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -86,6 +82,7 @@ padding: 0 30px;
     transition-duration: 0.25s;
     border-radius: 25px;
   }
+
   &_text {
     display: flex;
     justify-content: center;
@@ -94,11 +91,13 @@ padding: 0 30px;
     background-color: #eaeaea;
     font-weight: bold;
   }
+
   &_icon {
     &:hover {
       color: #9356dc;
     }
   }
+
   &_number {
     position: absolute;
     left: -14px;
@@ -113,95 +112,133 @@ padding: 0 30px;
     background-color: #9356dc;
   }
 }
-  .search-fonctionnement {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 30px;
-  }
+
+.search-fonctionnement {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+}
 
 .restaurant {
 
-background-color: #eaeaea;
-display: flex;
-justify-content: center;
-flex-direction: column;
-padding: 20px;
-margin-top: 100px;
-position: relative;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 100px;
+  position: relative;
 
- &_container {
+  &_container {
     gap: 15px;
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width:768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 80%;
-    margin:auto;
-    column-gap: 100px;
-    row-gap: 30px;
-        
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 80%;
+      margin: auto;
+      column-gap: 100px;
+      row-gap: 30px;
     }
-}
- &_cards {
+
+  }
+
+  &_cards {
     background-color: white;
     border-radius: 15px;
     position: relative;
-    
+
     a {
-    text-decoration: none;
-    color: black;
-}
+      text-decoration: none;
+      color: black;
+    }
 
     img {
-        width: 100%;
-        border-radius: 15px 15px 0 0;
-        height: 200px;
-        object-fit: cover;
-    }  
-}     
-
- 
-    &_footer {
-        display: flex;
-        align-items: center;
-        padding: 15px; 
-        
-    &_text {
-        flex: 1;
-
-        h4 {
-        margin: 0 0 15px 0 ;
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+      height: 200px;
+      object-fit: cover;
     }
-        p {
-        margin: 0;
-       }
-   }
-}
-    &_badge {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      color: darken(#99E2D0, 50%);
-      background-color: #99E2D0;
-      padding: 5PX;
-    }
-}  
-.footer {
+  }
+
+
+  &_footer {
     display: flex;
-    flex-direction: column;
-    background-color: rgb(54, 52, 52);
-    color: #eaeaea;
-    gap: 15px;
-    text-decoration: none;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    align-items: center;
+    padding: 15px;
 
-    &:hover {
-        color: rgb(192, 66, 146);
-        text-decoration: underline;
+    &_text {
+      flex: 1;
+
+      h4 {
+        margin: 0 0 15px 0;
+      }
+
+      p {
+        margin: 0;
       }
     }
+  }
 
+  &_badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: darken(#99E2D0, 50%);
+    background-color: #99E2D0;
+    padding: 5PX;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(54, 52, 52);
+  color: #eaeaea;
+  gap: 15px;
+  text-decoration: none;
+  padding: 20px;
+
+  &_title {
+    font-family: "Shrikhand", "cursive";
+  }
+
+  &_text {
+    flex-direction: column;
+    
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 100px;
+    flex-direction: row-reverse;
+  }
+
+  &_link {
+    color: white;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  div {
+    display: flex;
+    gap: 10px;
+    
+    @media (min-width: 768px) {
+      align-items: center;
+    }
+  }
+
+  &:hover {
+    color: rgb(192, 66, 146);
+    text-decoration: underline;
+  }
+}
