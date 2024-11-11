@@ -230,12 +230,13 @@ body {
 
   div {
     display: flex;
-    gap: 10px;
+    gap: 11px;
     
     @media (min-width: 768px) {
       align-items: center;
     }
   }
+  
 
   &:hover {
     color: rgb(192, 66, 146);

@@ -20,7 +20,8 @@
   min-height: 400PX;
   height: 300PX;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .restaurant {
@@ -42,7 +43,8 @@
 .restaurant_cards img {
   width: 200%;
   height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {
@@ -53,6 +55,12 @@
   margin-top: -60px;
   z-index: 1;
   position: relative;
+}
+@media (min-width: 768px) {
+  .menu {
+    max-width: 60%;
+    margin: -60px auto 0 auto;
+  }
 }
 .menu_title {
   font-weight: normal;
@@ -72,9 +80,20 @@
   color: black;
   padding-top: 10px;
 }
+@media (min-width: 1024px) {
+  .menu_title_cards2 {
+    justify-content: center;
+    gap: 30px;
+  }
+}
 .menu_title_cards2_text {
   flex: 1;
   font-family: "shrikhand", "cursive";
+}
+@media (min-width: 1024px) {
+  .menu_title_cards2_text {
+    flex: none;
+  }
 }
 .menu_button {
   position: relative;
@@ -281,7 +300,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     max-width: 80%;
     margin: auto;
-    column-gap: 100px;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
     row-gap: 30px;
   }
 }
@@ -298,7 +318,8 @@ body {
   width: 100%;
   border-radius: 15px 15px 0 0;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .restaurant_footer {
   display: flex;
@@ -330,12 +351,42 @@ body {
   color: #eaeaea;
   gap: 15px;
   text-decoration: none;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding: 20px;
+}
+.footer_title {
+  font-family: "Shrikhand", "cursive";
+}
+.footer_text {
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer_text {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    height: 100px;
+    flex-direction: row-reverse;
+  }
+}
+.footer_link {
+  color: white;
+  text-decoration: none;
+}
+.footer p {
+  margin: 0;
+}
+.footer div {
+  display: flex;
+  gap: 11px;
+}
+@media (min-width: 768px) {
+  .footer div {
+    align-items: center;
+  }
 }
 .footer:hover {
   color: rgb(192, 66, 146);
   text-decoration: underline;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
